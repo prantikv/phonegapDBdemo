@@ -44,7 +44,7 @@ function queryDB(tx) {//called by formsent() on succes of transaction() method
 	email=$("#email").val();
 
 	var sql='INSERT INTO myDB (id,data) VALUES(?,?)';
-   tx.executeSql('INSERT INTO myDB VALUES (?,?)', [username,email], insertSuccess, errorInsert);
+   tx.executeSql(sql, [username,email], insertSuccess, errorInsert);
 }
 function errorInsert(err){//error for the insert
 alert("Insert "+err.message);
@@ -58,7 +58,7 @@ function formSent(){//fired when form is submited
  return false;
 }
 function errorTrans(err){ //error for formsent
-alert("formsent "+err.message+"|"+err.code);
+alert("formsent "+err.message+"|"+err.code);//error is generated here
 }
 
 
@@ -78,7 +78,6 @@ function onDeviceReady(){
 }
 function createERR(err){//error for create
 alert("Create "+err.message);
-return false;
 }
 
 
