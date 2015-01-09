@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DataBaseDemo</title>
+	 <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/green.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery_mobile_structure.css">
+	<script src="cordova.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery_mobile.js"></script>
+</head>
+<body onload="domLoaded()">
+
+<div id="index" data-role="page" data-ajax="false">
+
+	<div data-role="header" >
+			<h1>DataBaseDemo</h1>
+	</div>
+
+
+<div data-role="content" >
+	
+
+<form method="GET"  onsubmit="return formSent()"> 
+	<label for="username">UserName</label>
+	<input id="username" name="username" type="text">
+	<label for="email">Email</label>
+	<input id="email" name="email" type="text">
+	<input type="submit" value="submit">
+</form> 
+
+	<a data-role="button" class="btn" id="logit" >log</a> 
+	<!-- this is just a link to run select query -->
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

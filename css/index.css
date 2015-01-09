@@ -1,0 +1,35 @@
+
+body{
+	  height: 100%;
+}
+#container{
+padding: 0;
+border: 3px dashed #ccc;
+position: relative;
+overflow: hidden;
+}
+
+#signPad {
+
+z-index: 100;
+}
+
+#dpi {
+  height: 1in;
+  left: -100%;
+  position: absolute;
+  top: -100%;
+  width: 1in;
+}.ui-mobile .ui-page {
+    min-height: 0px;
+}
+element.style {
+    min-height: 0px;
+}
+.ui-mobile .ui-page-active {
+    display: block;
+    overflow: hidden;
+}
+div[data-role="navbar"] img{
+  width: 20%;
+ }
